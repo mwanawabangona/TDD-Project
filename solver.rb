@@ -1,4 +1,8 @@
 class Solver
+  def reverse(str)
+    str.reverse
+  end
+
   def factorial(num)
     raise ArgumentError if num.negative?
     return 1 if num.zero?
