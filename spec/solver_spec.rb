@@ -29,6 +29,9 @@ describe Solver do
     it 'takes number that is divisible by 5 and returns it string' do
       expect(@solver.fizzbuz(10)).to eq 'buzz'
     end
+
+    it 'takes number turns it into a string' do
+      expect(@solver.fizzbuz(7)).to eq '7'
   end
 
   context 'check factorial methods' do
