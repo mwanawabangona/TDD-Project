@@ -10,6 +10,8 @@ class Solver
       'fizz'
     elsif num % 5 == 0
       'buzz'
+    else 
+      num.to_s
     end
   end
 end
