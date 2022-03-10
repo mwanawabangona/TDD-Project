@@ -8,6 +8,8 @@ class Solver
       'fizzbuzz'
     elsif (num % 3).zero?
       'fizz'
+    elsif (num % 5).zero?
+      'buzz'
     end
   end
 
