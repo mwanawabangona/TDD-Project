@@ -27,4 +27,8 @@ describe Solver do
       expect(@solver.fizzbuz(9)).to eq 'fizz'
     end
 
+    it 'takes number that is divisible by 5 and returns it string' do
+      expect(@solver.fizzbuz(10)).to eq 'buzz'
+    end
+
 end
