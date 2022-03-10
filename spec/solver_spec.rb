@@ -32,8 +32,8 @@ describe Solver do
 
     it 'takes number turns it into a string' do
       expect(@solver.fizzbuz(7)).to eq '7'
+    end
   end
-
   context 'check factorial methods' do
     describe '#describe' do
       it 'returns 1 when o is passed' do
