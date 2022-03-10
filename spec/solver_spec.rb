@@ -23,28 +23,27 @@ describe Solver do
     end
   end
 
-    it 'takes number that is divisible by 3 and returns it string' do
-      expect(@solver.fizzbuz(9)).to eq 'fizz'
-    end
+  it 'takes number that is divisible by 3 and returns it string' do
+    expect(@solver.fizzbuz(9)).to eq 'fizz'
+  end
 
-    it 'takes number that is divisible by 5 and returns it string' do
-      expect(@solver.fizzbuz(10)).to eq 'buzz'
-    end
+  it 'takes number that is divisible by 5 and returns it string' do
+    expect(@solver.fizzbuz(10)).to eq 'buzz'
+  end
 
-    it 'takes number turns it into a string' do
-      expect(@solver.fizzbuz(7)).to eq '7'
-    end
-    
+  it 'takes number turns it into a string' do
+    expect(@solver.fizzbuz(7)).to eq '7'
+  end
 
-    context'check factorial methods' do
-      describe '#describe' do
-        it 'returns 1 when o is passed' do
+  context 'check factorial methods' do
+    describe '#describe' do
+      it 'returns 1 when o is passed' do
         expect(@solver.factorial(0)).to eq(1)
-        end
       end
-
-        it 'raises an expection when a negative number is passed' do
-          expect{ @solver.factorial(-1) }.to raise_exception(ArgumentError)
-        end
     end
+
+    it 'raises an expection when a negative number is passed' do
+      expect { @solver.factorial(-1) }.to raise_exception(ArgumentError)
+    end
+  end
 end

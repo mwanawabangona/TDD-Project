@@ -1,24 +1,24 @@
 class Solver
   def reverse(str)
-    str = str.reverse
+    str.reverse
   end
 
   def fizzbuz(num)
-    if num % 3 == 0 && num % 5 == 0
+    if (num % 3).zero? && (num % 5).zero?
       'fizzbuzz'
-    elsif num % 3 == 0
+    elsif (num % 3).zero?
       'fizz'
-    elsif num % 5 == 0
+    elsif (num % 5).zero?
       'buzz'
-    else 
+    else
       num.to_s
     end
   end
-  
+
   def factorial(num)
     raise ArgumentError if num.negative?
-      return 1 if num.zero?
+    return 1 if num.zero?
 
-      num * factorial(num - 1)
-    end 
+    num * factorial(num - 1)
+  end
 end
