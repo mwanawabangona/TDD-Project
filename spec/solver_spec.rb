@@ -41,6 +41,12 @@ describe Solver do
         it 'returns 1 when o is passed' do
         expect(@solver.factorial(0)).to eq(1)
         end
+        it 'raises an expection when a negative number is passed' do
+            expect(@solver.factorial(-1)).to raise_error(ArgumentError)(@solver.factorial(-10)).to raise_error(ArgumentError)
+        end
+    end
+        
+
     end
     end
 
