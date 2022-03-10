@@ -17,10 +17,14 @@ describe Solver do
     end
   end
 
-  context 'check fizzbuz method' do
-    it 'takes number and returns it string' do
+  context 'check fizzbuz methods' do
+    it 'takes number that is divisible by 3 and 5 and returns it string' do
       expect(@solver.fizzbuz(15)).to eq 'fizzbuzz'
     end
   end
+
+    it 'takes number that is divisible by 3 and returns it string' do
+      expect(@solver.fizzbuz(9)).to eq 'fizz'
+    end
 
 end
