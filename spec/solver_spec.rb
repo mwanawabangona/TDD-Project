@@ -17,6 +17,12 @@ describe Solver do
     end
   end
 
+  context 'check fizzbuz methods' do
+    it 'takes number that is divisible by 3 and 5 and returns it string' do
+      expect(@solver.fizzbuz(15)).to eq 'fizzbuzz'
+    end
+  end
+
   context 'check factorial methods' do
     describe '#describe' do
       it 'returns 1 when o is passed' do
